@@ -1,6 +1,5 @@
 package com.GroundZero.DTO;
-
-import jakarta.persistence.Column;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -8,9 +7,11 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-public class GamesDTO {
+@AllArgsConstructor
+public class FileResponse {
 	
-	    private Long id; 
-		private String game_name;
-		private String description;
+	public String fileName;
+	public String message;
+	
+
 }
