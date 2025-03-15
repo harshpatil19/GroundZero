@@ -6,6 +6,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -37,12 +39,14 @@ public class User {
 	@Column(name="Name", nullable=false, length=50)
 	public String username;
 	
-	@Column(name="Email", nullable=false, length=20,unique = true)
+	@Column(name="Email", nullable=false,unique = true)
 	public String email;
 	
 	@Column(length = 20,name="Password", nullable = false) 
 	public String password;
 	
+	
+	@JsonIgnore
 	@Column(length = 20,name="Date", nullable = false) 
 	public LocalDate dob;
 	

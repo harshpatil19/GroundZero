@@ -26,10 +26,10 @@ public class Games {
 	
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id; 
+    private int gameid; 
 	
 	@Column(name="game_name",length = 20)
-	private String game_name;
+	private String gameName;
 	
 	@Column(name="description",length=1000)
 	private String description;

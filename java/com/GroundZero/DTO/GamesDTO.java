@@ -10,7 +10,7 @@ import lombok.Setter;
 @NoArgsConstructor
 public class GamesDTO {
 	
-	    private Long id; 
-		private String game_name;
+	    private int gameid; 
+		private String gameName;
 		private String description;
 }
